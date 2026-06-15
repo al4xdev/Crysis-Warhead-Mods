@@ -360,6 +360,7 @@ function Player:OnReset()
 	if (self == g_localActor) then
 		self:ResetDofFx();
 		self:ResetMotionFx();
+		System.SetCVar("cl_crouchToggle", 1);
 	end
 
 	mergef(Player.SignalData,g_SignalData,1);

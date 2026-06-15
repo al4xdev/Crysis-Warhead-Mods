@@ -229,7 +229,7 @@
 			<key name="space"/>
 			<key name="xi_a"/>
 		</action>
-		<action name="crouch" onPress="1">
+		<action name="crouch" onPress="1" onRelease="1">
 			<key name="c"/>
 			<key name="xi_thumbl"/>
 		</action>
@@ -244,13 +244,8 @@
 			<key name="xi_shoulderl"/>
 		</action>
 		<action name="special" onPress="1" onRelease="1">
-			<key name="xi_thumbr"/>
-		</action>  
-		<action name="g_suitMode 0" onPress="1" consoleCmd="1">
-			<key name="mouse3"/>
-		</action>
-		<action name="g_suitMode 3" onPress="1" consoleCmd="1">
 			<key name="t"/>
+			<key name="xi_thumbr"/>
 		</action>
 		<action name="leanleft" onPress="1" onRelease="1" onHold="1">
 			<key name="q"/>

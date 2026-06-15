@@ -229,7 +229,7 @@
 			<key name="space"/>
 			<key name="xi_a"/>
 		</action>
-		<action name="crouch" onPress="1">
+		<action name="crouch" onPress="1" onRelease="1">
 			<key name="lctrl"/>
 			<key name="xi_thumbl"/>
 		</action>
