@@ -1,4 +1,4 @@
-# Crysis Remastered - R6S Style ACOG Scope
+# Crysis Warhead - R6S Style ACOG Scope
 
 This mod replaces the default reticle of the Assault Scope accessory with a clean, high-resolution (512x512) Rainbow Six Siege style red ACOG reticle.
 
@@ -11,12 +11,12 @@ This mod replaces the default reticle of the Assault Scope accessory with a clea
 
 ## Installation
 
-1. Copy `zzzzz_ACOGScope.pak` into your `...\Crysis Remastered\Game\` folder.
+1. Copy `zzzzz_ACOGScope.pak` into your `...\Crysis Warhead\Game\` folder.
 2. In-game, equip the **Assault Scope** accessory on any weapon to view the updated ACOG reticle.
 
 ---
 
 ## Nexus Mods & Updates
-You can also find this mod on my [Nexus Mods Profile](https://www.nexusmods.com/profile/alexspf).
+You can find this mod and updates on my [Nexus Mods Profile](https://www.nexusmods.com/profile/alexspf).
 > [!NOTE]
 > The GitHub repository is the main source of development. The most up-to-date and stable versions of the mods will always be released here first.

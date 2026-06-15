@@ -1,4 +1,4 @@
-# Crysis Remastered - Green Triangle Reflex Sight
+# Crysis Warhead - Green Triangle Reflex Sight
 
 This mod replaces the standard red dot reticle on the Reflex Sight weapon accessory with a sharp, neon-green triangle.
 
@@ -10,13 +10,13 @@ This mod replaces the standard red dot reticle on the Reflex Sight weapon access
 
 ## Installation
 
-1. Copy `zzzz_GreenReflexSight.pak` into your `...\Crysis Remastered\Game\` folder.
+1. Copy `zzzzz_GreenReflexSight.pak` into your `...\Crysis Warhead\Game\` folder.
 2. In-game, equip the **Reflex Sight** accessory on any weapon to view the updated green triangle.
 
 ---
 
 ## Nexus Mods & Updates
-You can also find this mod on my [Nexus Mods Profile](https://www.nexusmods.com/profile/alexspf).
+You can find this mod and updates on my [Nexus Mods Profile](https://www.nexusmods.com/profile/alexspf).
 > [!NOTE]
 > The GitHub repository is the main source of development. The most up-to-date and stable versions of the mods will always be released here first.
 

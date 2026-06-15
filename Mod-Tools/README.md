@@ -1,6 +1,6 @@
-# Crysis Modding Tools
+# Crysis Warhead Modding Tools
 
-This folder contains helper PowerShell scripts designed to pack and unpack Crysis Remastered `.pak` files (which are standard ZIP archives underneath).
+This folder contains helper PowerShell scripts designed to pack and unpack Crysis Warhead `.pak` files (which are standard ZIP archives underneath).
 
 ## Scripts
 
@@ -10,7 +10,7 @@ Compresses a mod source directory into a `.pak` archive.
 **Parameters:**
 | Parameter | Required | Default | Description |
 |---|---|---|---|
-| `-SourceFolder` | ✅ | — | Name of the mod folder to pack |
+| `-SourceFolder`| ✅ | — | Name of the mod folder to pack |
 | `-OutputPakName` | ✅ | — | Output filename (e.g. `mymod.pak`) |
 | `-OutputDir` | ❌ | Script directory | Where to save the `.pak` file |
 
@@ -22,17 +22,17 @@ Compresses a mod source directory into a `.pak` archive.
 **Examples:**
 ```powershell
 # Pack into the default output (next to the script)
-.\Pack-Mods.ps1 -SourceFolder "Crysis-Crouch-Toggle" -OutputPakName "zzzz_zRemasterCrouchToggleFix.pak"
+.\Pack-Mods.ps1 -SourceFolder "Crysis-Crouch-Toggle" -OutputPakName "zzzzz_CrouchToggle.pak"
 
 # Pack into a specific absolute path
-.\Pack-Mods.ps1 -SourceFolder "Crysis-Crouch-Toggle" -OutputPakName "zzzz_zRemasterCrouchToggleFix.pak" -OutputDir "C:\MyMods\Output"
+.\Pack-Mods.ps1 -SourceFolder "Crysis-Crouch-Toggle" -OutputPakName "zzzzz_CrouchToggle.pak" -OutputDir "C:\MyMods\Output"
 
 # Pack into a relative path (resolved from the script directory)
-.\Pack-Mods.ps1 -SourceFolder "Crysis-Crouch-Toggle" -OutputPakName "zzzz_zRemasterCrouchToggleFix.pak" -OutputDir "..\Game"
+.\Pack-Mods.ps1 -SourceFolder "Crysis-Crouch-Toggle" -OutputPakName "zzzzz_CrouchToggle.pak" -OutputDir "..\Game"
 ```
 
 **Source folder lookup order:**
-1. Sibling of `Mod-Tools\` (i.e. `Crysis-Mods-Github\<folder>`)
+1. Sibling of `Mod-Tools\` (i.e. `Crysis-Warhead-Mods-Github\<folder>`)
 2. Inside `Mod-Tools\` itself
 
 ---
@@ -54,13 +54,13 @@ Extracts files from any game or mod `.pak` archive into a folder for viewing or 
 **Examples:**
 ```powershell
 # Unpack into auto-named folder next to the script
-.\Unpack-Pak.ps1 -PakFile "..\Game\scripts.pak"
+.\Unpack-Pak.ps1 -PakFile "..\Game\GameData.pak"
 
 # Unpack into a specific folder
-.\Unpack-Pak.ps1 -PakFile "..\Game\scripts.pak" -OutputDir "..\Game\scripts_extracted"
+.\Unpack-Pak.ps1 -PakFile "..\Game\GameData.pak" -OutputDir "..\Game\gamedata_extracted"
 
 # Unpack using an absolute path
-.\Unpack-Pak.ps1 -PakFile "C:\MyMods\Game\scripts.pak" -OutputDir "C:\MyMods\Extracted\scripts"
+.\Unpack-Pak.ps1 -PakFile "C:\MyMods\Game\GameData.pak" -OutputDir "C:\MyMods\Extracted\gamedata"
 ```
 
 ---
