@@ -1,0 +1,11 @@
+# Ignore compiled releases (upload these directly on the GitHub release page)
+Releases/
+Game/
+
+# Temporary and system files
+*.bak
+*.tmp
+Thumbs.db
+.DS_Store
+backlog.md
+diff_player.txt

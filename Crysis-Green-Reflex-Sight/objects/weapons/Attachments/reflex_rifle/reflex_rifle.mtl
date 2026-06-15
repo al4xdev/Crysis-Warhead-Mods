@@ -1,0 +1,30 @@
+<Material MtlFlags="524544" >
+ <SubMaterials >
+  <Material Name="reflex" MtlFlags="524416" Shader="Illum" GenMask="80001" StringGenMask="%ALLOW_POM%GLOSS_MAP" SurfaceType="mat_metal_thick" MatTemplate="" Diffuse="0.35294119,0.35294119,0.35294119" Specular="0.37254903,0.37254903,0.37254903" Emissive="0,0,0" Shininess="100" Opacity="1" >
+   <Textures >
+    <Texture Map="Diffuse" File="objects/weapons/attachments/reflex_rifle/textures/reflex.tif" Filter="7" />
+    <Texture Map="Specular" File="objects/weapons/attachments/reflex_rifle/textures/reflex_spec.tif" Filter="7" />
+    <Texture Map="Bumpmap" File="objects/weapons/attachments/reflex_rifle/textures/reflex_ddn.tif" Filter="6" />
+   </Textures>
+   <PublicParams SpecMapChannelB="0" SpecMapChannelR="0" FresnelPower="4" GlossMapChannelB="1" SpecMapChannelG="1" FresnelScale="1" FresnelBias="0.25" IndirectColor="0.25,0.25,0.25" />
+  </Material>
+  <Material Name="glass" MtlFlags="524416" Shader="Scopes" GenMask="1" StringGenMask="" SurfaceType="" MatTemplate="" Diffuse="0,0,0" Specular="1,1,1" Emissive="0,0,0" Shininess="10" Opacity="0.99000001" >
+   <Textures >
+    <Texture Map="Diffuse" File="objects/weapons/attachments/reflex_rifle/textures/green_triangle.tif" Filter="7" />
+   </Textures>
+   <PublicParams NoiseScale="0.75" ObjectUV="0" ScopeScale="80" ScopeColorMultiplier="160" />
+   <MaterialLayers >
+    <Layer />
+    <Layer />
+    <Layer Name="CloakLayer" NoDraw="1" >
+     <PublicParams DetailBumpTillingU="1" RefrBumpScale="1" DetailBumpScale="0" SparksTilling="1" DetailBumpTillingV="1" />
+    </Layer>
+   </MaterialLayers>
+  </Material>
+  <MaterialRef />
+  <Material Name="proxy" MtlFlags="525440" Shader="Nodraw" GenMask="0" StringGenMask="" SurfaceType="mat_metal_thick_weapons" MatTemplate="" Diffuse="1,0.141176,0.16078401" Specular="0,0,0" Emissive="0,0,0" Shininess="10" Opacity="1" >
+   <Textures />
+  </Material>
+ </SubMaterials>
+ <PublicParams FresnelPower="4" GlossFromDiffuseContrast="1" FresnelScale="1" GlossFromDiffuseOffset="0" FresnelBias="1" GlossFromDiffuseAmount="0" GlossFromDiffuseBrightness="0.333" IndirectColor="0.25,0.25,0.25" />
+</Material>
